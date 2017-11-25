@@ -1,4 +1,8 @@
 .page{
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 	// width: 1920px;
 	// background-color: blue;
 	// height: 1000px;
@@ -31,7 +35,7 @@
 				background-color: #03b6e7;
 				border: 1px solid #00a6d3;
 				padding: 2.5%;
-				&.active {
+				&:hover {
 					background-color: #00a6d3;
 				}
 			}
@@ -93,6 +97,11 @@
 	text-align: right;
 	.container{
 		.row{
+			.col-5{
+				background-image: url("about.jpg");
+				background-repeat: no-repeat;
+				background-size: auto;
+			}
 			.col-7{
 				:nth-child(1){
 					color:#898e8f;
