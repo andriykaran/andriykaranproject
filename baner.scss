@@ -3,9 +3,6 @@
 		max-width: 100%;
 		height: auto;
 	}
-	// width: 1920px;
-	// background-color: blue;
-	// height: 1000px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -28,10 +25,14 @@
 	}
 	.box {
 		float: left;
-		margin-top: 40%;
+		@media only screen and (min-width: 767px) {
+			margin-top: 40%;
+		}
+
 		.row {
 
-			.col-6 {
+			.col-lg-6 {
+				min-width: 137px;
 				background-color: #03b6e7;
 				border: 1px solid #00a6d3;
 				padding: 2.5%;
@@ -43,10 +44,14 @@
 				height: 50%;
 				//float: left;
 				margin: 5%;
+
 			}
 			.innertext {
 				height: 50%;
 				float: left;
+				@media only screen and (max-width: 500px) {
+					font-size: 1em;
+				}
 			}
 			.arrow {
 				//clear: both;
@@ -62,6 +67,9 @@
 				}
 				clear: both;
 				font-size: 1.15em;
+				@media only screen and (max-width: 767px) {
+					font-size: 0.6em;
+				}
 				font-weight: bold;
 				padding: 2.5%;
 				background-color: #03b6e7;
@@ -81,6 +89,9 @@
 					float: right;
 
 					font-size: 1.5em;
+					@media only screen and (max-width: 767px) {
+						font-size: 0.9em;
+					}
 				}
 			}
 
@@ -88,6 +99,9 @@
 				padding: 2.5%;
 				font-size: 2em;
 				background-color: #ffac56;
+				@media only screen and (max-width: 767px) {
+					font-size: 1em;
+				}
 			}
 		}
 }
@@ -95,14 +109,29 @@
 .about {
 	margin: 30px 0;
 	text-align: right;
+	@media only screen and (max-width: 1000px) {
+		font-size: 0.8em;
+	}
+	@media only screen and (max-width: 500px) {
+		img {width: 0;}
+	}
 	.container{
 		.row{
 			.col-5{
-				background-image: url("about.jpg");
-				background-repeat: no-repeat;
-				background-size: auto;
+				//background-image: url("about.jpg");
+				//background-repeat: no-repeat;
+				//background-size: auto;
+				//@media only screen and (min-width: 500px) {
+				//	background-image: url("about.jpg");
+				//	background-repeat: no-repeat;
+                //
+				//}
 			}
 			.col-7{
+				@media only screen and (max-width: 500px) {
+					min-width: 100%;
+					}
+				}
 				:nth-child(1){
 					color:#898e8f;
 					text-transform: uppercase;
@@ -128,17 +157,22 @@
 					padding: 5px;
 					border-radius: 15px;
 					text-transform: uppercase;
+					min-width: 50px;
+					min-width: 75px;
 				}
 			}
 		
 		}
 	}
 
-}
+
 
 .what{
 	background-color: #e7eff1;
 	padding: 70px 0;
+	@media only screen and (max-width: 500px){
+		padding: 35px 0;
+	}
 		.container{		
 			.col-12 {
 				color: #898e8f;
@@ -150,6 +184,10 @@
 			font-weight: bold;
 			text-transform: uppercase;
 			margin: 0 0 35px 0;
+			@media only screen and (max-width: 500px){
+				font-size: 1em;
+				margin: 0 0 10px 0;
+			}
 			}
 			:nth-child(4){
 			color: #16d428;
@@ -162,12 +200,18 @@
 			font-weight: bold;
 			text-transform: uppercase;
 			margin: 10px 0;
+			@media only screen and (max-width: 500px){
+				font-size: 0.8em;
+			}
 		}
 		:nth-child(6){
 			color: #838b8c;
 			font-size: 1.1em;
 			font-family: 'Roboto', sans-serif;
 			margin: 10px 0 0 0;
+			@media only screen and (max-width: 500px){
+				font-size: 0.7em;
+			}
 		}
 
 	}
@@ -175,11 +219,17 @@
 .testimonials{
 	background-color: #03b6e7;
 	padding: 50px 0;
+	@media only screen and (max-width: 500px){
+		padding: 25px 0;
+	}
 	.container{
 		.col-12{
 			color: #a6ecff;
 			text-transform: uppercase;
 			margin: 10px 0 0 0;
+			@media only screen and (max-width: 500px){
+				margin: 5px 0 0 0;
+			}
 		}
 		.col-6{
 			color: #fff;
@@ -187,19 +237,25 @@
 			font-size: 3em;
 			font-weight: bold;
 			margin: 0 0 10px 0;
+			@media only screen and (max-width: 500px){
+				margin: 0 0 5px 0;
+				font-size: 1.5em;
+			}
+
 		}
 		.col-10{
 			color: #ddf8ff;
 			font-family: 'Roboto', sans-serif;
 			margin: 30px 0;
+			@media only screen and (max-width: 500px){
+				margin: 15px 0;
+			}
 		}
 		.col-8{
-			// border: 1px solid black;
 			:nth-child(1){
 				font-weight: bold;
 				text-transform: uppercase;
 				color: #fff;
-				// border: 1px solid black;
 				height: 50%;
 				padding: 6% 0 0 0;
 
@@ -210,8 +266,6 @@
 				font-size: 15px;
 				color: #ddf8ff;
 			}
-			
-				
 			}
 		}
 		:nth-child(4){
@@ -230,6 +284,11 @@
 						padding: 5px;
 						border-radius: 15px;
 						text-transform: uppercase;
+						min-width: 150px;
+						@media only screen and (max-width: 500px){
+							font-size: 0.5em;
+						}
+
 					}
 		}
 	}
@@ -237,30 +296,32 @@
 .blog{
 	background-color: #e7eff1;
 	clear: both;
-	background-image: url("imageblog.jpg");
-	background-repeat: no-repeat;
-	background-position: right;
-	background-position: right top;
-	background-size: 50%;
-	//.col-6{
-	//	:first-child{
-	//		background-color: red;
-	//	}
-	//}
+	@media only screen and (min-width: 576px) {
+		background-image: url("imageblog.jpg");
+		background-repeat: no-repeat;
+		background-position: right;
+		background-position: right top;
+		background-size: 50%;
+	}
+
 	.post{
+		@media only screen and (max-width: 575px){
+			margin: 10px 0;
+		}
 			margin: 20px 0;
 			.date{
 				width: 100%;
-				// margin: 10px 0;
 				color: #343a3b;
 				font-weight: bold;
 			}
 			.theme{
 				width: 100%;
-				// margin: 10px 0;
 				font-weight: bold;
 				font-size: 1.5em;
 				text-transform: uppercase;
+				@media only screen and (max-width: 575px){
+					font-size: 1em;
+				}
 			}
 			.posttext{
 				width: 100%;
@@ -268,6 +329,10 @@
 				font-family: 'roboto', sans-serif;
 				font-style: italic;
 				color: #838b8c;
+				@media only screen and (max-width: 575px){
+					margin: 10px 0;
+					font-size: 0.75em;
+				}
 			}	
 		}
 			
@@ -280,20 +345,27 @@
 		padding: 10px 10px;
 		border-right: 2.5px;
 		border-left: 2.5px;
+		@media only screen and (max-width: 500px) {
+			margin: 10px 0;
+			padding: 5px 5px;
+		}
 	}
 	img{
 		float: left;
 		margin: 0 20px 20px 20px;
+		@media only screen and (max-width: 500px) {
+			margin: 0 5px 5px 5px;
+			max-height: 30px;
+		}
 	}
 	hr {margin: 20px 0;
  		display: block;
  		clear: both;
-    	// margin-top: 0.5em;
-    	// margin-bottom: 0.5em;
-    	// margin-left: auto;
-    	// margin-right: auto;
-    	border-style: inset;
+		border-style: inset;
     	border-width: 1px;
+		@media only screen and (max-width: 500px) {
+			margin: 5px 0;
+		}
 		}
 	.top1{
 		color: #898e8f;
@@ -307,5 +379,8 @@
 	}
 	.col-12{
 		margin: 50px 0 0 0;
+		@media only screen and (max-width: 500px) {
+			margin: 5px 0 0 0;
+		}
 	}
 }

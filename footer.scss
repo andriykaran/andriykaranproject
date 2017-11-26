@@ -2,9 +2,16 @@ footer {
 	.container {
 		margin-top: 10px;
 		padding: 20px 0;
+		@media only screen and (max-width: 500px) {
+			margin-top: 5px;
+			padding: 5px 0;
+		}
 	}
 	.row {
 		margin: 50px;
+		@media only screen and (max-width: 500px) {
+			margin: 5px;
+		}
 	}
 	.col-sm-6{
 		margin: 10px 0;
@@ -16,14 +23,24 @@ footer {
 		list-style-type: none;
     	margin: 10px 0 0 0;
     	padding: 0;
+		@media only screen and (max-width: 500px) {
+			font-size: 0.5em;
+			margin: 2px 0 0 0;
+		}
 	}
 	.top{
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 1.2em;
+		@media only screen and (max-width: 500px) {
+			font-size: 0.8em;
+		}
 	}
 	.text {
 		margin: 10px 0 0 0;
+		@media only screen and (max-width: 500px) {
+			font-size: 0.5em;
+		}
 	}
 
 }
