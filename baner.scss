@@ -63,7 +63,7 @@
 					float: left;
 					margin: 0;
 					width: 25%;
-					//padding: 2.5%;
+					height: 100%;
 				}
 				clear: both;
 				font-size: 1.15em;
@@ -74,21 +74,28 @@
 				padding: 2.5%;
 				background-color: #03b6e7;
 				.innertext{
+					float: left;
 					text-align: center;
 					width: 75%;
 					padding: 10% 0 0 0;
 				}
 				.phone{
-					.button{
+					float: left;
+					button{
+						color: white;
+						border: none;
 						text-align: center;
 						background-color: #16d428;
 						border-radius: 35px;
+						display: block;
+						margin: auto;
+						width: 100%;
 					}
-					padding: 0 10% 2.5% 10%;
+					padding: 1% 5% 2.5% 5%;
 					width: 75%;
 					float: right;
 
-					font-size: 1.5em;
+					font-size: 1.3em;
 					@media only screen and (max-width: 767px) {
 						font-size: 0.9em;
 					}
@@ -107,6 +114,14 @@
 }
 
 .about {
+	.badge{
+		position: absolute;
+		top: 40%;
+		right: 25%;
+		width: 50%;
+		height: auto;
+		padding: 0;
+	}
 	margin: 30px 0;
 	text-align: right;
 	@media only screen and (max-width: 1000px) {
@@ -118,14 +133,7 @@
 	.container{
 		.row{
 			.col-5{
-				//background-image: url("about.jpg");
-				//background-repeat: no-repeat;
-				//background-size: auto;
-				//@media only screen and (min-width: 500px) {
-				//	background-image: url("about.jpg");
-				//	background-repeat: no-repeat;
-                //
-				//}
+				position: relative;
 			}
 			.col-7{
 				@media only screen and (max-width: 500px) {

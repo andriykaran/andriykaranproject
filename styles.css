@@ -80,23 +80,31 @@ header nav {
     .box .row.bottom .img {
       float: left;
       margin: 0;
-      width: 25%; }
+      width: 25%;
+      height: 100%; }
     @media only screen and (max-width: 767px) {
       .box .row.bottom {
         font-size: 0.6em; } }
     .box .row.bottom .innertext {
+      float: left;
       text-align: center;
       width: 75%;
       padding: 10% 0 0 0; }
     .box .row.bottom .phone {
-      padding: 0 10% 2.5% 10%;
+      float: left;
+      padding: 1% 5% 2.5% 5%;
       width: 75%;
       float: right;
-      font-size: 1.5em; }
-      .box .row.bottom .phone .button {
+      font-size: 1.3em; }
+      .box .row.bottom .phone button {
+        color: white;
+        border: none;
         text-align: center;
         background-color: #16d428;
-        border-radius: 35px; }
+        border-radius: 35px;
+        display: block;
+        margin: auto;
+        width: 100%; }
       @media only screen and (max-width: 767px) {
         .box .row.bottom .phone {
           font-size: 0.9em; } }
@@ -111,12 +119,21 @@ header nav {
 .about {
   margin: 30px 0;
   text-align: right; }
+  .about .badge {
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    width: 50%;
+    height: auto;
+    padding: 0; }
   @media only screen and (max-width: 1000px) {
     .about {
       font-size: 0.8em; } }
   @media only screen and (max-width: 500px) {
     .about img {
       width: 0; } }
+  .about .container .row .col-5 {
+    position: relative; }
   @media only screen and (max-width: 500px) {
     .about .container .row .col-7 {
       min-width: 100%; } }
