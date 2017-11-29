@@ -37,11 +37,28 @@ footer {
 		}
 	}
 	.text {
-		margin: 10px 0 0 0;
+		margin: 10px 0 10px 0;
 		@media only screen and (max-width: 500px) {
 			font-size: 0.5em;
 		}
 	}
+	.col-12{
+		padding: 0;
+		.form-control{
+			background-color: #323334;
+			color: #5e5e5e;
+			text-transform: uppercase;
+			margin: 0;
+			border-radius: 20px;
+		}
+		button{
+			background-color: #16d428;
+			border-radius: 20px;
+			color: #fff;
+		}
+	}
+
 
 }
 	
+

@@ -260,13 +260,20 @@ header nav {
         font-size: 0.5em; } }
 
 .blog {
+  padding: 10px;
   background-color: #e7eff1;
   clear: both; }
+  .blog button {
+    border-radius: 20px;
+    color: #606668; }
+    .blog button.btn-outline-primary {
+      border-color: #ffac56; }
+    .blog button.btn-outline-secondary {
+      border-color: #989fa0; }
   @media only screen and (min-width: 576px) {
     .blog {
       background-image: url("imageblog.jpg");
       background-repeat: no-repeat;
-      background-position: right;
       background-position: right top;
       background-size: 50%; } }
   .blog .post {
@@ -371,9 +378,21 @@ footer {
       footer .top {
         font-size: 0.8em; } }
   footer .text {
-    margin: 10px 0 0 0; }
+    margin: 10px 0 10px 0; }
     @media only screen and (max-width: 500px) {
       footer .text {
         font-size: 0.5em; } }
+  footer .col-12 {
+    padding: 0; }
+    footer .col-12 .form-control {
+      background-color: #323334;
+      color: #5e5e5e;
+      text-transform: uppercase;
+      margin: 0;
+      border-radius: 20px; }
+    footer .col-12 button {
+      background-color: #16d428;
+      border-radius: 20px;
+      color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
