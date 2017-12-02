@@ -1,0 +1,22 @@
+{
+  "name": "andriykaranproject",
+  "version": "1.0.0",
+  "description": "skillup project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriykaran/andriykaranproject.git"
+  },
+  "author": "Andrii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriykaran/andriykaranproject/issues"
+  },
+  "homepage": "https://github.com/andriykaran/andriykaranproject#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

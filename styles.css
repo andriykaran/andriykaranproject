@@ -1,6 +1,6 @@
-@import url(normalize.css);
-@import url(bootstrap.css);
-@import url(font-awesome.css);
+@import url(css/normalize.css);
+@import url(css/bootstrap.css);
+@import url(css/font-awesome.css);
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Domine");
@@ -36,7 +36,7 @@ header nav {
 
 .banner {
   clear: both;
-  background-image: url("image.jpg");
+  background-image: url("img/banner/image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -158,8 +158,7 @@ header nav {
     padding: 5px;
     border-radius: 15px;
     text-transform: uppercase;
-    min-width: 50px;
-    min-width: 75px; }
+    min-width: 50px; }
 
 .what {
   background-color: #e7eff1;
@@ -272,7 +271,7 @@ header nav {
       border-color: #989fa0; }
   @media only screen and (min-width: 576px) {
     .blog {
-      background-image: url("imageblog.jpg");
+      background-image: url("img/imageblog.jpg");
       background-repeat: no-repeat;
       background-position: right top;
       background-size: 50%; } }

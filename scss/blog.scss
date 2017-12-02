@@ -1,0 +1,54 @@
+.blog{
+	padding: 10px;
+	background-color: #e7eff1;
+	clear: both;
+	button{
+		border-radius: 20px;
+		color: #606668;
+		&.btn-outline-primary{
+			border-color: #ffac56;
+		}
+		&.btn-outline-secondary{
+			border-color: #989fa0;
+		}
+	}
+	@media only screen and (min-width: 576px) {
+		background-image: url("img/imageblog.jpg");
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: 50%;
+	}
+
+	.post{
+		@media only screen and (max-width: 575px){
+			margin: 10px 0;
+		}
+			margin: 20px 0;
+			.date{
+				width: 100%;
+				color: #343a3b;
+				font-weight: bold;
+			}
+			.theme{
+				width: 100%;
+				font-weight: bold;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				@media only screen and (max-width: 575px){
+					font-size: 1em;
+				}
+			}
+			.posttext{
+				width: 100%;
+				margin: 20px 0;
+				font-family: 'roboto', sans-serif;
+				font-style: italic;
+				color: #838b8c;
+				@media only screen and (max-width: 575px){
+					margin: 10px 0;
+					font-size: 0.75em;
+				}
+			}	
+		}
+			
+}

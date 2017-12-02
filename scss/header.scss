@@ -1,0 +1,36 @@
+
+header {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.container{
+		margin-bottom: 0;
+	}
+	.col-4 {
+		float: left;
+		img{
+			max-width: 100%;
+		}
+	}	
+	nav {
+		float: left;
+		a {
+			margin: 0 5px;
+			font-family: 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			font-size: $headermenufontsize;
+			font-weight: bold;
+			color: inherit;
+			text-decoration:none;
+			&:hover {color: $headermenucolorhover;};
+			&.active {color: $headermenucoloractive;};
+
+		}	
+	}
+}
+
+
+
+
+
