@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		hello
+	</title>
+	<link rel="shortcut icon" href="img\banner\Vector Smart Object.png" >
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+
+	</header>
+<div class="text-here">
+</div>
+
+	<p id="demo" onclick=my()>JavaScript can change HTML content.</p>
+
+	<form action="">
+		Radius:<br>
+		<input  type="number" id="rad" placeholder="Enter radius">
+		<input  type="button" value="Run" onclick="krug()">
+
+	</form>
+
+	<script type="text/javascript">
+        function krug(r) {
+           r = document.getElementById("rad").value;
+//            return Math.PI*Math.pow(r, 2) ;
+            console.log(Math.round(Math.PI*Math.pow(r, 2)));
+        }
+
+
+	</script>
+
+</body>
+
+</html>
